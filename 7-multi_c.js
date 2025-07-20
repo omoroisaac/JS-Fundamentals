@@ -1,6 +1,11 @@
-function add(a, b) {
-  return a + b;
-}
+const x = parseInt(process.argv[2]);
+let i = 0;
 
-const [a, b] = process.argv.slice(2).map(Number);
-console.log(isNaN(a) || isNaN(b) ? 'Arguments must be integers' : add(a, b));
+if (isNaN(x)) {
+  console.log("Missing number of occurrences");
+} else {
+  while (i < x) {
+    console.log("C is fun");
+    i++;
+  }
+}
